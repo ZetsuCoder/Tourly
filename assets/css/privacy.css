@@ -1,0 +1,171 @@
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding-top: 120px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 900px;
+  }
+  
+  .policy-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    line-height: 1.8;
+    color: #444;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #222;
+  }
+  
+  .effective-date {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .policy-content {
+    margin-bottom: 30px;
+  }
+  
+  .policy-content p,
+  .policy-content ul {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .policy-content ul {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  
+  .consent-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+    color: #444;
+  }
+  
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    margin-right: 12px;
+  }
+  
+  .checkbox-container:hover input ~ .checkmark {
+    background-color: #ddd;
+  }
+  
+  .checkbox-container input:checked ~ .checkmark {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .checkbox-container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .btn-accept {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+  }
+  
+  .btn-accept:hover:not([disabled]) {
+    background-color: #0056b3;
+  }
+  
+  .btn-accept:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 768px) {
+    .policy-card {
+      padding: 25px;
+    }
+  
+    h1 {
+      font-size: 22px;
+    }
+  
+    .policy-content p,
+    .policy-content ul,
+    .checkbox-container {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .policy-card {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    .policy-content p,
+    .policy-content ul,
+    .checkbox-container {
+      font-size: 13px;
+    }
+  }
