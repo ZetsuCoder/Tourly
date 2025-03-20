@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
         consent.classList.add('active');
         overlay.classList.add('active');
     }
-  
+    
     function savePreferences(analytics, marketing) {
         const preferences = {
             essential: true,
