@@ -106,7 +106,9 @@
             </ul>
           </nav>
 
-          <button class="btn btn-primary">Şimdi Rezervasyon Yap</button>
+          <a href="#contact-form">
+            <button class="btn btn-primary">Şimdi Rezervasyon Yap</button>
+          </a>
         </div>
       </div>
     </header>
@@ -122,7 +124,9 @@
             <div class="btn-group">
               <button class="btn btn-primary">Daha Fazla Bilgi</button>
 
-              <button class="btn btn-secondary">Şimdi Rezervasyon Yap</button>
+              <a href="#contact-form">
+                <button class="btn btn-secondary">Şimdi Rezervasyon Yap</button>
+              </a>
             </div>
           </div>
         </section>
@@ -322,7 +326,9 @@
                       <span>/ kişi başı</span>
                     </p>
 
-                    <button class="btn btn-secondary">Şimdi Rezervasyon Yap</button>
+                    <a href="#contact-form">
+                      <button class="btn btn-secondary">Şimdi Rezervasyon Yap</button>
+                    </a>
                   </div>
                 </div>
               </li>
@@ -383,7 +389,9 @@
                       <span>/ kişi başı</span>
                     </p>
 
-                    <button class="btn btn-secondary">Şimdi Rezervasyon Yap</button>
+                    <a href="#contact-form">
+                      <button class="btn btn-secondary">Şimdi Rezervasyon Yap</button>
+                    </a>
                   </div>
                 </div>
               </li>
@@ -444,7 +452,9 @@
                       <span>/ kişi başı</span>
                     </p>
 
-                    <button class="btn btn-secondary">Şimdi Rezervasyon Yap</button>
+                    <a href="#contact-form">
+                      <button class="btn btn-secondary">Şimdi Rezervasyon Yap</button>
+                    </a>
                   </div>
                 </div>
               </li>
@@ -496,6 +506,91 @@
           </div>
         </section>
 
+        <article>
+          <!-- CONTACT HERO SECTION -->
+          <section class="contact-hero">
+            <div class="container">
+              <h1 class="h1 hero-title">Bize Ulaşın</h1>
+              <p class="hero-text">Sorularınız, önerileriniz veya rezervasyon talepleriniz için bizimle iletişime geçebilirsiniz.</p>
+            </div>
+          </section>
+
+          <!-- CONTACT FORM SECTION -->
+          <section class="contact-form-section" id="contact-form">
+            <div class="container">
+              <div class="contact-wrapper">
+                <div class="contact-content">
+                  <p class="section-subtitle">İletişim Formu</p>
+                  <h2 class="h2 section-title">Bizimle İletişime Geçin</h2>
+                  <p class="section-text">Aşağıdaki formu doldurarak bizimle iletişime geçebilirsiniz. En kısa sürede size geri dönüş yapacağız.</p>
+
+                  <div class="contact-info">
+                    <div class="contact-info-item">
+                      <div class="icon-box">
+                        <ion-icon name="call-outline"></ion-icon>
+                      </div>
+                      <div class="info-content">
+                        <h4 class="info-title">Telefon</h4>
+                        <p class="info-text">+01 (123) 4567 90</p>
+                      </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                      <div class="icon-box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                      </div>
+                      <div class="info-content">
+                        <h4 class="info-title">E-posta</h4>
+                        <p class="info-text">info@tourly.com</p>
+                      </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                      <div class="icon-box">
+                        <ion-icon name="location-outline"></ion-icon>
+                      </div>
+                      <div class="info-content">
+                        <h4 class="info-title">Adres</h4>
+                        <p class="info-text">3146 Koontz, Kaliforniya</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <form id="contactForm" class="contact-form">
+                  <div class="form-wrapper">
+                    <div class="input-wrapper">
+                      <label for="name" class="input-label">Adınız*</label>
+                      <input type="text" name="name" id="name" required placeholder="Adınızı girin" class="input-field" />
+                    </div>
+
+                    <div class="input-wrapper">
+                      <label for="email" class="input-label">E-posta Adresiniz*</label>
+                      <input type="email" name="email" id="email" required placeholder="E-posta adresinizi girin" class="input-field" />
+                    </div>
+
+                    <div class="input-wrapper">
+                      <label for="message" class="input-label">Mesajınız*</label>
+                      <textarea name="message" id="message" required placeholder="Mesajınızı yazın" class="textarea-field" rows="5"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary">Mesajı Gönder</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+
+          <!-- MAP SECTION -->
+          <section class="map-section">
+            <div class="container">
+              <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596552044!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2str!4v1647886602799!5m2!1sen!2str" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+          </section>
+        </article>
+
         <section class="cta" id="contact">
           <div class="container">
             <div class="cta-content">
@@ -516,7 +611,7 @@
       <div class="footer-top">
         <div class="container">
           <div class="footer-brand">
-            <a href="#" class="logo">
+            <a href="/index.html" class="logo">
               <img src="./assets/images/logo.svg" alt="Tourly logosu" />
             </a>
 
@@ -567,7 +662,7 @@
 
           <ul class="footer-bottom-list">
             <li>
-              <a href="#" class="footer-bottom-link">Gizlilik Politikası</a>
+              <a href="./privacy.html" class="footer-bottom-link">Gizlilik Politikası</a>
             </li>
 
             <li>
@@ -585,6 +680,22 @@
     <a href="#top" class="go-top" data-go-top>
       <ion-icon name="chevron-up-outline"></ion-icon>
     </a>
+
+    
+    <!-- cookie  -->
+    <div id="cookie-overlay"></div>
+    <!-- Cookie Banner -->
+    <div id="cookie-banner">
+      <div class="cookie-content">
+        <h2>Gizliliğinize Önem Veriyoruz</h2>
+        <p>Bu site, deneyiminizi geliştirmek için çerezler aracılığıyla verilerinizi toplar. Bu verileri, sosyal medya özellikleri sağlamak, içeriği kişiselleştirmek ve trafiğimizi analiz etmek için kullanıyoruz. Aşağıdaki "Tümünü Kabul Et" butonuna tıklayarak bu teknolojinin kullanımına izin vermiş olursunuz.</p>
+      </div>
+      <div class="cookie-buttons">
+        <button class="accept" onclick="acceptCookies()">Tümünü kabul et</button>
+        <button class="reject" onclick="rejectCookies()">Tümünü reddet</button>
+        <button class="settings" onclick="openSettings()">Değişiklik yap</button>
+      </div>
+    </div>
 
     <script src="./assets/js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
